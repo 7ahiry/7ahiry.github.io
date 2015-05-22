@@ -1,0 +1,13 @@
+# Site settings
+title: 7ahiry's personnal thoughts
+email: 7ahiry@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    This blog tracks my life and the things I am doing in my personnal life or
+    during my working hours
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://7ahiry.github.io/" # the base hostname & protocol for your site
+twitter_username: 7ahiry
+github_username:  7ahiry
+
+# Build settings
+markdown: kramdown
