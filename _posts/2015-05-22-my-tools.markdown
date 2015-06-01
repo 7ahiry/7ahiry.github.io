@@ -9,15 +9,17 @@ In this post I will just try to list the tools I use when working or for doing
 private things. I am a huge fan of **linux** and I am using it since 2004. My
 actual distribution is [**archlinux**](https://www.archlinux.org/).
 
-I use my console like 80 percent of the time. Since a couple of weeks a use
-[**termite**](https://github.com/thestinger/termite).
+I use my terminal and command line like 80 percent of the time. Since a couple
+of weeks I have started using
+[**termite**](https://github.com/thestinger/termite). I use **awesome** window
+manager to automatically tile my windows.
 
 I am mainly writing papers, notes, coding and for that I am using
-[**vim**](www.vim.org) as my editor. I sue vim with a bunch of plugins to make my
+[**vim**](www.vim.org) as my editor. I use vim with a bunch of plugins to make my
 editing life easier.
 
 I fall in love with versionning system and I am now using **git** for everything,
-at least I try. I have create some account on all possible free (or not) online
+at least I try. I have create some accounts on all possible free (or not) online
 hosting plateforms.
 
 I also use some basic tools such as : **firefox** as a navigator (with adblock
@@ -25,3 +27,11 @@ plus), **zathura** as my pdf reader, **mpv** to play multimedia, **mutt** to rea
 **latex** to create some documents and sometime **libreoffice** just to be able to read
 some documents sent by my colleagues. I also have **transmission** installed on
 my system for bittorrent download and **skype** for chatting with my family.
+
+I am sharing my office with some colleagues and sometimes I really need to
+concentrate. I have a Bose headphones with noise cancelation capabilities. Most
+of the time, I am not listening music but white, grey or pink noise.
+
+I am not a big fan of apple but I use an apple qwerty keyboard. My hardware
+configuration is not important except may be that I use two screens. I usually
+rotate one of them from landscape to portrait for pdf reading.
