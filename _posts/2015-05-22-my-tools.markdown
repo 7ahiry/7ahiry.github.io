@@ -15,7 +15,7 @@ of weeks I have started using
 manager to automatically tile my windows.
 
 I am mainly writing papers, notes, coding and for that I am using
-[**vim**](www.vim.org) as my editor. I use vim with a bunch of plugins to make my
+[**vim**](http://www.vim.org) as my editor. I use vim with a bunch of plugins to make my
 editing life easier.
 
 I fall in love with versionning system and I am now using **git** for everything,
