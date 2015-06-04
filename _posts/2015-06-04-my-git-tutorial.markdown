@@ -207,3 +207,40 @@ include/merge the modifications in the branch master and look at your
     cat readme.md
 ```
 
+
+These are more or less the git command I use everyday. I also use `git remote`
+to sync my local repository to a distant one. To add a remote repository run:
+
+```
+     git remote add <name> <url>
+```
+
+I usually use `origin` as name and `https://github.com/user/test.git`. Be sure
+you have created the repository in your github account in this case. Then push
+everything to the repository by running:
+
+```
+    git push origin master
+```
+
+```
+    git push origin test
+```
+
+If you want to clone an existing repository on a new computer for example:
+
+```
+    git clone https://github.com/7ahiry/test.git
+```
+
+If you want to get an update a branch from a remote repository:
+
+```
+    git pull origin master
+```
+
+To update all branch run:
+
+```
+    git pull --all
+```
