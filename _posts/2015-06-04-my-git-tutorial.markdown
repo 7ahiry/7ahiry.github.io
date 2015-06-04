@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My git tutorial"
-date:   2015-05-22 22:13:00
+date:   2015-06-04 22:13:00
 categories: tools
 ---
 
