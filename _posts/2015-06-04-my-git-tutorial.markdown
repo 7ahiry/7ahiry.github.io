@@ -62,10 +62,15 @@ Now let us modify our file
 
 ```
 echo "line number 2" >> readme.md
+
 git add readme.md
+
 git commit -m "Added line number 2"
+
 echo "line number 3" >> readme.md
+
 git add readme.md
+
 git commit -m "Added line number 3"
 ```
 We are now entering the real power of git. We have done 3 commits. In orderto
@@ -82,6 +87,7 @@ Now let us modify our file in this way:
 
 ```
 echo "line number 4" >> readme.md
+
 git add readme.md
 ```
 
@@ -92,7 +98,10 @@ readme.md run:
 
 ```
 git reset HEAD readme.md
+
 git checkout -- readme.md
 ```
 
-Now you are back
+Now you are back on the previous state of the file.
+
+Let us now assume
