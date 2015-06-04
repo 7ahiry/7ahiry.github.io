@@ -18,3 +18,31 @@ is yes, then the first command I run in this directory is:
 git init
 ```
 
+Even if I am not going to use revision control, this is a safety belt. you
+never know.
+
+Strating from there, I am just creating my text file. Let us create a file
+readme.md
+
+```
+echo "My readme" > readme.md
+```
+
+You have made some modification to your working copy. In fact you have added
+a new file. If you do not have a fancy prompt that tells you that, run the
+following command to see the status of your working directory.
+
+```
+git status
+```
+
+A file/modification can have three state in your git repository (that is how
+I call it). The first state is the actual state of our file readme.md: this
+file or modification is untracked. In order to track the file, that means
+include it in your git repository run:
+
+```
+git add readme.md
+```
+
+
