@@ -233,7 +233,7 @@ If you want to clone an existing repository on a new computer for example:
     git clone https://github.com/7ahiry/test.git
 ```
 
-If you want to get an update a branch from a remote repository:
+If you want to get an update from a branch on a remote repository:
 
 ```
     git pull origin master
