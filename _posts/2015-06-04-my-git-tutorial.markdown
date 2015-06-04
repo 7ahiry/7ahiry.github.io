@@ -97,8 +97,10 @@ file/modification is already staged. Note that staged is the status of the file
 when it is added but not commited yet. To come back to the previous version of
 readme.md run:
 
+```
     git reset HEAD readme.md
     git checkout -- readme.md
+```
 
 Now you are back on the previous state of the file.
 
