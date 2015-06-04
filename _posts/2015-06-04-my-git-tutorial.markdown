@@ -44,6 +44,7 @@ include it in your git repository run:
 ```
 git add readme.md
 ```
+
 Now, your file is tracked (indexed ?). This is the second state of
 a file/modification. You can now publish/commit this trackd file to your git
 repository. Commiting, for me, means that you have reached a milestones in your
@@ -104,4 +105,52 @@ git checkout -- readme.md
 
 Now you are back on the previous state of the file.
 
-Let us now assume
+Let us now assume that you want to undo the last two commits. Since in git we
+do not want to re-write history, we just undo the commits by doing some
+commits. This is how you should procede:
+
+```
+git revert HEAD~2..HEAD
+```
+
+This command will prompt you for commit message to explain why you are doing
+it. Since you want to undo two commits (HEAD~2) you will be prompted by two
+commit message. If you want to have only one single commit to explain why you
+wat to go back to an older version, do:
+
+```
+git revert --no-commit HEAD~2..HEAD
+
+git commit
+```
+
+If you do not want to edit commit message (I do not recommand it) run:
+
+```
+git revert --no-edit HEAD~2..HEAD
+```
+
+Now you want to branch. My rule is branch often, commit often. Every
+time I want to do a modification that I am not sure or I do not want to alter
+the initial file until I am really really sure, I create a branch. A Branch is
+like a copy of your actual directory. By default you are in the master branch.
+So for example to copy the master branch to another branch name test:
+
+```
+git branch test
+```
+
+This command will "copy" the branch master to the branch test. If you are not
+sur in which branch you are type:
+
+```
+git branch
+```
+
+To switch from branch test
+
+```git
+git checkout test
+```
+
+
