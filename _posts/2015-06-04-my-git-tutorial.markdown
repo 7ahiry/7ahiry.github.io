@@ -146,4 +146,26 @@ To switch from branch test
 git checkout test
 ```
 
+Let us now modify the file when we are in this branch and commit the
+modification in this branch.
+
+```
+    echo "TEST: added a new line" >> readme.md
+    git add readme.md
+    git commit -m "TEST addons"
+```
+
+Come back to the branch master and see the difference between the files.
+
+```
+    git checkout master
+    cat readme.md
+```
+
+Now that we are satisfied by the modificatio made in the branch test, let us
+include/merge the modifications in the branch master
+
+```
+    git merge test
+```
 
