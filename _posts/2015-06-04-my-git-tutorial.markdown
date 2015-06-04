@@ -22,7 +22,7 @@ Even if I am not going to use revision control, this is a safety belt. you
 never know.
 
 Strating from there, I am just creating my text file. Let us create a file
-readme.md
+`readme.md`
 
 ```
 echo "My readme" > readme.md
@@ -37,7 +37,7 @@ git status
 ```
 
 A file/modification can have three state in your git repository (that is how
-I call it). The first state is the actual state of our file readme.md: this
+I call it). The first state is the actual state of our file `readme.md`: this
 file or modification is untracked. In order to track the file, that means
 include it in your git repository run:
 
@@ -63,10 +63,25 @@ Now let us modify our file
 
 ```
     echo "line number 2" >> readme.md
+```
+
+```
     git add readme.md
+```
+
+```
     git commit -m "Added line number 2"
+```
+
+```
     echo "line number 3" >> readme.md
+```
+
+```
     git add readme.md
+```
+
+```
     git commit -m "Added line number 3"
 ```
 
@@ -84,6 +99,9 @@ Now let us modify our file in this way:
 
 ```
     echo "line number 4" >> readme.md
+```
+
+```
     git add readme.md
 ```
 
@@ -94,6 +112,9 @@ readme.md run:
 
 ```
     git reset HEAD readme.md
+```
+
+```
     git checkout -- readme.md
 ```
 
@@ -114,6 +135,9 @@ wat to go back to an older version, do:
 
 ```
     git revert --no-commit HEAD~2..HEAD
+```
+
+```
     git commit
 ```
 
@@ -151,7 +175,13 @@ modification in this branch.
 
 ```
     echo "TEST: added a new line" >> readme.md
+```
+
+```
     git add readme.md
+```
+
+```
     git commit -m "TEST addons"
 ```
 
@@ -159,6 +189,9 @@ Come back to the branch master and see the difference between the files.
 
 ```
     git checkout master
+```
+
+```
     cat readme.md
 ```
 
@@ -171,6 +204,6 @@ include/merge the modifications in the branch master and look at your
 ```
 
 ```
-    car readme.md
+    cat readme.md
 ```
 
