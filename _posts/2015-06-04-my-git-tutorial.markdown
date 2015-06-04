@@ -62,18 +62,14 @@ make your commit consistent.
 Now let us modify our file
 
 ```
-echo "line number 2" >> readme.md
-
-git add readme.md
-
-git commit -m "Added line number 2"
-
-echo "line number 3" >> readme.md
-
-git add readme.md
-
-git commit -m "Added line number 3"
+    echo "line number 2" >> readme.md
+    git add readme.md
+    git commit -m "Added line number 2"
+    echo "line number 3" >> readme.md
+    git add readme.md
+    git commit -m "Added line number 3"
 ```
+
 We are now entering the real power of git. We have done 3 commits. In orderto
 see them just type:
 
@@ -87,9 +83,8 @@ try so graphical interface for this.
 Now let us modify our file in this way:
 
 ```
-echo "line number 4" >> readme.md
-
-git add readme.md
+    echo "line number 4" >> readme.md
+    git add readme.md
 ```
 
 Not you change your mind and want to remove this last line of our file, but our
@@ -118,9 +113,8 @@ commit message. If you want to have only one single commit to explain why you
 wat to go back to an older version, do:
 
 ```
-git revert --no-commit HEAD~2..HEAD
-
-git commit
+    git revert --no-commit HEAD~2..HEAD
+    git commit
 ```
 
 If you do not want to edit commit message (I do not recommand it) run:
