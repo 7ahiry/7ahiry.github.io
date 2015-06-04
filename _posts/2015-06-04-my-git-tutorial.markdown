@@ -163,9 +163,11 @@ Come back to the branch master and see the difference between the files.
 ```
 
 Now that we are satisfied by the modificatio made in the branch test, let us
-include/merge the modifications in the branch master
+include/merge the modifications in the branch master and look at your
+`readme.md` file.
 
 ```
     git merge test
+    car readme.md
 ```
 
