@@ -44,5 +44,55 @@ include it in your git repository run:
 ```
 git add readme.md
 ```
+Now, your file is tracked (indexed ?). This is the second state of
+a file/modification. You can now publish/commit this trackd file to your git
+repository. Commiting, for me, means that you have reached a milestones in your
+editing process. In our case the milestone is the the kickoff. So, to commit
+your file/modification just run:
 
+```
+git commit -m "This is our first commit"
+```
 
+If you do not know what is happening in your git repository, just run git
+status. Note that you can create/modify files and add them before commiting to
+make your commit consistent.
+
+Now let us modify our file
+
+```
+echo "line number 2" >> readme.md
+git add readme.md
+git commit -m "Added line number 2"
+echo "line number 3" >> readme.md
+git add readme.md
+git commit -m "Added line number 3"
+```
+We are now entering the real power of git. We have done 3 commits. In orderto
+see them just type:
+
+```
+git log
+```
+
+There are many other ways to see the commit history of your repository. You can
+try so graphical interface for this.
+
+Now let us modify our file in this way:
+
+```
+echo "line number 4" >> readme.md
+git add readme.md
+```
+
+Not you change your mind and want to remove this last line of our file, but our
+file/modification is already staged. Note that staged is the status of the file
+when it is added but not commited yet. To come back to the previous version of
+readme.md run:
+
+```
+git reset HEAD readme.md
+git checkout -- readme.md
+```
+
+Now you are back
