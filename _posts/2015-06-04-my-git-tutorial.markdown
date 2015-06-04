@@ -14,7 +14,7 @@ I have become a huge fanatic of git. Now, everytime I enter a directory, the
 first question I am asking is: Am I going to produce some text ? If the answer
 is yes, then the first command I run in this directory is:
 
-``` git
+```
 git init
 ```
 
