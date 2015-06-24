@@ -12,7 +12,7 @@ slow !!!
 The first thing I have done is to create aliases and turn all the frequently
 used command in a one-letter command. For example, I turn **firefox** into
 **f**. In fact, when possible, I create a symlink in my **$HOME/bin** directory
-to allow the command to be called from my lancher.
+to allow the command to be called from my launcher.
 
 But the most useful command I have is **o**, for **xdg-open**. This is a killer
 one. Like the open command in OSX. Just install it, and in my case create the
