@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The magic command"
-date:   2015-05-22 22:13:00
+date:   2015-06-24 09:41:00
 categories: tools
 ---
 
