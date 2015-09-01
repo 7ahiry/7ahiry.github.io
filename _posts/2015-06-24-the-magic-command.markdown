@@ -26,3 +26,11 @@ since I also want it to handle specific files that are not handled by the
 **xdg-open** command such as the archive files.
 
 Now my terminal is executing command at the speed of my thoughts.
+
+In order to know the mimetype of a file: **xdg-mime query filetype myfile.ext**
+
+In order to see the list of the available applications list:
+**/usr/share/applications**
+
+the format of **~/.local/share/applications/mimeapps.list** is
+**text/x-tex=gvim.desktop** below a **[Default Applications]** header
