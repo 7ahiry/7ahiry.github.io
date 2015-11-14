@@ -244,3 +244,39 @@ To update all branch run:
 ```
     git pull --all
 ```
+
+
+If you have modified your file/directory and want to split the modification into different commits. 
+You can do 
+```
+git add --patch filename.x
+``` 
+
+`(or -p for short)`, and git will begin breaking down your file in what it thinks are sensible "hunks" (portions of the file). You will then be prompted with this question:
+
+```
+Stage this hunk [y,n,q,a,d,/,j,J,g,s,e,?]?
+```
+
+And here the meaning of each option:
+
+- `y` stage this hunk for the next commit
+- `n` do not stage this hunk the next commit
+- `q` quit; do not stage this hunk or any of the remaining ones
+- `a` stage this hunk and all later hunks in the file
+- `d` do not stage this hunk or any of the later hunks in the file
+- `g` select a hunk to go to
+- `/` search for a hunk matching the given regex
+- `j` leave this hunk undecided, see next undecided hunk
+- `J` leave this hunk undecided, see next hunk
+- `k` leave this hunk undecided, see previous undecided hunk
+- `K` leave this hunk undecided, see previous hunk
+- `s` split the current hunk into smaller hunks
+- `e` manually edit the current hunk
+- `?` print help
+
+If the file is not in the repository yet, do first `git add -N filename.x`. Afterwards you can go on with git add -p filename.x.
+
+You can use than: `git diff --staged` afterwards to check that you staged the correct ones `git reset -p` to unstage incorrect hunks `git commit -v` to view your commit while you edit the commit message.
+
+If you are not satisfied with the way git splitted your hunks, use the `e` manually edit the current hunk option. Delete the lines you to not want and commit. Deleting file portion in this case will not affect the change you have done. 
