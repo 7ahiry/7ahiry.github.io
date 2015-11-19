@@ -10,6 +10,8 @@ command I am used to use and try more or less to explain them. If you need
 a complete tutorial, you can find a lot of them by using your favorite internet
 research website.
 
+### Basics
+
 I have become a huge fanatic of git. Now, everytime I enter a directory, the
 first question I am asking is: Am I going to produce some text ? If the answer
 is yes, then the first command I run in this directory is:
@@ -93,7 +95,7 @@ git log
 ```
 
 There are many other ways to see the commit history of your repository. You can
-try so graphical interface for this.
+try so graphical interface for this like `gitk`.
 
 Now let us modify our file in this way:
 
@@ -146,6 +148,8 @@ If you do not want to edit commit message (I do not recommand it) run:
 ```
 git revert --no-edit HEAD~2..HEAD
 ```
+
+### Play with branches
 
 Now you want to branch. My rule is branch often, commit often. Every
 time I want to do a modification that I am not sure or I do not want to alter
