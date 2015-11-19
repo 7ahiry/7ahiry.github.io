@@ -208,6 +208,9 @@ include/merge the modifications in the branch master and look at your
 ```
 
 
+### Remote repository
+
+
 These are more or less the git command I use everyday. I also use `git remote`
 to sync my local repository to a distant one. To add a remote repository run:
 
