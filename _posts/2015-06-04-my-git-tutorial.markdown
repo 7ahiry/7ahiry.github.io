@@ -245,6 +245,7 @@ To update all branch run:
     git pull --all
 ```
 
+### Split commits 
 
 If you have modified your file/directory and want to split the modification into different commits. 
 You can do 
@@ -280,6 +281,9 @@ If the file is not in the repository yet, do first `git add -N filename.x`. Afte
 You can use than: `git diff --staged` afterwards to check that you staged the correct ones `git reset -p` to unstage incorrect hunks `git commit -v` to view your commit while you edit the commit message.
 
 If you are not satisfied with the way git splitted your hunks, use the `e` manually edit the current hunk option. Delete the lines you to not want and commit. Deleting file portion in this case will not affect the change you have done. 
+
+
+You can use tools like `git gui` which is a commit tool, and `gitk` which is a way to see the git tree.
 
 
 ### Conflict
