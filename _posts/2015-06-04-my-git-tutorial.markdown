@@ -296,6 +296,13 @@ In order to resolve conflits, you can use `gvim`
 git mergetool -t gvimdiff  
 ```
 
+run this command if you do not want to keep original files
+
+```
+git config --global mergetool.keepBackup false  
+```
+
+
 This tools shows:
 ```
 +--------------------------------+
