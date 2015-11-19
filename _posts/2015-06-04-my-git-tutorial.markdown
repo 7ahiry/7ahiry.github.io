@@ -280,3 +280,32 @@ If the file is not in the repository yet, do first `git add -N filename.x`. Afte
 You can use than: `git diff --staged` afterwards to check that you staged the correct ones `git reset -p` to unstage incorrect hunks `git commit -v` to view your commit while you edit the commit message.
 
 If you are not satisfied with the way git splitted your hunks, use the `e` manually edit the current hunk option. Delete the lines you to not want and commit. Deleting file portion in this case will not affect the change you have done. 
+
+
+### Conflict
+In order to resolve conflits, you can use `gvim`
+
+```
+git mergetool -t gvimdiff  
+```
+
+This tools shows:
+```
++--------------------------------+
+| LOCAL  |     BASE     | REMOTE |
++--------------------------------+
+|             MERGED             |
++--------------------------------+
+```
+
+__LOCAL__
+A temporary file containing the contents of the file on the current branch.
+
+__BASE__
+A temporary file containing the common base for the merge.
+
+__REMOTE__
+A temporary file containing the contents of the file to be merged.
+
+__MERGED__
+The file containing the conflict markers. Git has performed as much automatic conflict resolution as possible and the state of this file is a combination of both LOCAL and REMOTE with conflict markers surrounding anything that Git could not resolve itself. The mergetool should write the result of the resolution to this file.
