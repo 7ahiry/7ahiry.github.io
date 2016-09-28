@@ -8,7 +8,7 @@ categories: tools
 This post is not meant to be a real tutorial. I will just put here the git
 command I am used to use and try more or less to explain them. If you need
 a complete tutorial, you can find a lot of them by using your favorite internet
-research website.
+research website. (You can use `git gui` and `gitk --all` for graphical user interface). 
 
 ### Basics
 
@@ -112,9 +112,13 @@ file/modification is already staged. Note that staged is the status of the file
 when it is added but not commited yet. To come back to the previous version of
 readme.md run:
 
+To un-stagged the file, you can run the followinf command:
+
 ```
     git reset HEAD readme.md
 ```
+
+To undo the modification in your file you can issue the following command:
 
 ```
     git checkout -- readme.md
@@ -327,3 +331,51 @@ A temporary file containing the contents of the file to be merged.
 
 __MERGED__
 The file containing the conflict markers. Git has performed as much automatic conflict resolution as possible and the state of this file is a combination of both LOCAL and REMOTE with conflict markers surrounding anything that Git could not resolve itself. The mergetool should write the result of the resolution to this file.
+
+
+
+## Usefull summary for undoing things
+
+### Unstaging a Staged File
+
+### Unstaging a Staged File
+
+For example, let’s say you’ve changed a file, but you accidentally type `git add *` and stage it. How can you unstage it ? The `git status` command reminds you:
+
+```
+$ git add .
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+    modified:   README.md
+```
+
+You must run
+
+```
+$ git reset HEAD README.md
+Unstaged changes after reset:
+M	README.md
+```
+
+### Unmodifying a Modified File
+
+To unmodifiy a modified file, when you type `git status` you will see:
+
+```
+$ git status
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+    modified:   README.md
+```
+It tells you  how to discard the changes you’ve made. Let’s do what it says:
+
+```
+$ git checkout -- README.md  
+```
+
+And you're done.
